@@ -10,9 +10,7 @@
   </div>
   <div class="input">
     <input type="text" placeholder="input + Enter" v-model="input" @keydown.enter="submit" />
-    <i @click="submit">
-      <SendIcon></SendIcon>
-    </i>
+    <SendIcon class="icon" @click="submit"></SendIcon>
   </div>
 </template>
 
@@ -133,7 +131,7 @@ function dataFormat(res: responseType) {
     }
   }
 
-  >i {
+  >.icon {
     font-size: 24px;
     font-style: normal;
     color: hsla(160, 100%, 37%, 1);

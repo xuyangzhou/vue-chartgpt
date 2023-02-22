@@ -1,4 +1,5 @@
 {
+   // AI: https://ai.jkapp.net/completions?token=%E4%BD%A0%E5%A5%BD
   // 随机土味情话： https://api.uomg.com/api/rand.qinghua?format=json
   // 诗词： https://v1.jinripoetry.com/all.json
   // 毒鸡汤： https://api.shadiao.pro/du
