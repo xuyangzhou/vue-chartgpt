@@ -5,9 +5,12 @@
         <ChartIcon></ChartIcon>
         <span>VUE ChartGPT</span>
       </div>
-      <a href="">
-        <GitHubIcon></GitHubIcon>
-      </a>
+      <div class="nav">
+        <SwitchColor></SwitchColor>
+        <a href="https://github.com/xuyangzhou/vue-chartgpt" class="vt-social-link" target="_blank">
+          <GitHubIcon></GitHubIcon>
+        </a>
+      </div>
     </div>
   </div>
 </template>
@@ -15,14 +18,19 @@
 <script setup lang="ts">
 import ChartIcon from "./icons/IconChart.vue";
 import GitHubIcon from "./icons/IconGitHub.vue";
+import SwitchColor from '@/components/SwitchColor.vue'
 </script>
 
 <style lang="scss">
 .header {
   padding: 0 32px;
-  position: relative;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  z-index: 9;
+  background: var(--vt-c-bg);
   border-bottom: 1px solid var(--vt-c-divider-light);
-  // padding: 0 12px 0 24px;
   height: var(--vt-nav-height);
   background-color: var(--vt-c-bg);
   white-space: nowrap;
@@ -38,13 +46,33 @@ import GitHubIcon from "./icons/IconGitHub.vue";
     .logo {
       display: flex;
       align-items: center;
-      > svg {
+
+      >svg {
         color: hsla(160, 100%, 37%, 1);
       }
-      > span {
+
+      >span {
         margin-left: 10px;
       }
     }
+
+    .nav {
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.vt-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--vt-c-text-2);
+  transition: color .5s;
+
+  &:hover {
+    color: var(--vt-c-text-1);
+    transition: color .25s;
   }
 }
 </style>

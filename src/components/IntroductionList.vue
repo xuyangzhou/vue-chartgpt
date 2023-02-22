@@ -46,4 +46,11 @@ import CommunityIcon from "./icons/IconCommunity.vue";
   justify-items: center;
   margin: 20px 0;
 }
+
+@media (max-width: 768px) {
+  .intr {
+    grid-template-columns: 1fr;
+    justify-items: start;
+  }
+}
 </style>

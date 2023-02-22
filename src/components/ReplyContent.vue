@@ -93,7 +93,7 @@ onMounted(() => {
 <style lang="scss">
 .reply {
   padding: 10px 0;
-  background: #f6f6f6;
+  background: var(--vt-c-bg-soft);
   margin: 10px 0;
 }
 

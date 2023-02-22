@@ -11,7 +11,8 @@
 .main {
   max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem 0;
+  padding: 2rem;
+  padding-top: var(--vt-nav-height);
 }
 
 a,
@@ -21,11 +22,11 @@ a,
   transition: 0.4s;
 }
 
-@media (hover: hover) {
+/* @media (hover: hover) {
   a:hover {
     background-color: hsla(160, 100%, 37%, 0.2);
   }
-}
+} */
 
 @media (min-width: 1024px) {
   body {
@@ -41,7 +42,7 @@ a,
 }
 
 .title {
-  font-size: 60px;
+  font-size: 40px;
   line-height: 1.25;
   font-weight: 600;
   letter-spacing: -1.5px;

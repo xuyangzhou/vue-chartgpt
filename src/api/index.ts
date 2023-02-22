@@ -1,3 +1,4 @@
+import type { responseType } from "@/types/index";
 import request from "@/utils/request";
 
 import {
@@ -72,6 +73,10 @@ export function getJoke(): Promise<{
 
 export function getFriendWords(): Promise<{ type: string; text: string }> {
   return request.get(FRIENDWORDS);
+}
+
+export function getReply(url: string): Promise<responseType> {
+  return request.get(url)
 }
 
 // 跨域

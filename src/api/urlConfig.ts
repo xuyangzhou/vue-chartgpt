@@ -1,4 +1,4 @@
-export const POETRY = "https://v1.jinripoetry.com/all.json";
+export const POETRY = "https://api.wenanmen.com/api/client/shi/rank?type=tang300";
 
 export const LOVEWORDS = `https://api.uomg.com/api/rand.qinghua?format=json`;
 
