@@ -46,7 +46,7 @@ vue3 + vite + typescript + pinia
 
 
 
-**## 截图**
+**## 截图** (图片链接失效或者网速过慢可自行到public下查看)
 
 ![dark](https://i.328888.xyz/2023/02/22/xWVyX.jpeg)
 
@@ -94,58 +94,38 @@ See [Vite Configuration Reference](https://vitejs.dev/config/).
 
 **## Project Setup**
 
-
-
-\```sh
-
+```
 npm install
-
-\```
-
-
+```
 
 **### Compile and Hot-Reload for Development**
 
 
 
-\```sh
-
+```
 npm run dev
-
-\```
+```
 
 
 
 **### Type-Check, Compile and Minify for Production**
 
-
-
-\```sh
-
+```
 npm run build
-
-\```
+```
 
 
 
 **### Run Unit Tests with [****Vitest****](**https://vitest.dev/**)**
 
-
-
-\```sh
-
+```
 npm run test:unit
-
-\```
+```
 
 
 
 **### Lint with [****ESLint****](**https://eslint.org/**)**
 
-
-
-\```sh
-
+```
 npm run lint
-
-\```
+```
