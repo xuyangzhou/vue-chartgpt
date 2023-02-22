@@ -23,7 +23,7 @@ import ReplyContent from "./ReplyContent.vue";
 import IntroductionList from "./IntroductionList.vue";
 import { ref, onMounted, type Ref } from "vue";
 import { getReply } from "@/api/index";
-import type { resContentType, resDataType, responseType, resTextType } from "@/types";
+import type { resContentType, resDataType, responseType, resTextType ,resPoetryType} from "@/types";
 import {
   GLOWINGTERMS,
   DUJITANG,
@@ -91,12 +91,12 @@ async function submit() {
   flag = false;
 }
 
-
-
 function dataFormat(res: responseType) {
   if ((res as resContentType).content) return (res as resContentType).content
   if ((res as resTextType).text) return (res as resTextType).text
-  if ((res as resDataType).data) return (res as resDataType).data.text
+  if ((res as resDataType).data && (res as resDataType).data.text) return (res as resDataType).data.text
+  if ((res as resPoetryType).data && (res as resPoetryType).data.contents) return (res as resPoetryType).data.contents
+  
   return '服务出错了，请等待重新发起请求'
 }
 </script>

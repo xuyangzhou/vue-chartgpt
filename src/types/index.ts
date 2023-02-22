@@ -1,9 +1,14 @@
+export type resPoetryType = {
+    code: number;
+    data: {
+        author: string;
+        category: string;
+        contents: string;
+        origin: string;
+    }
+
+}
 export type resContentType = {
-    author: string;
-    category: string;
-    content: string;
-    origin: string;
-} | {
     code: number;
     content: string;
 }
@@ -21,4 +26,4 @@ export type resDataType = {
     };
     msg: string;
 }
-export type responseType = resDataType | resTextType | resContentType;
+export type responseType = resPoetryType | resDataType | resTextType | resContentType;
