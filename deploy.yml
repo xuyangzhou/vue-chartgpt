@@ -1,0 +1,12 @@
+echo "# vue-echarts-map" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/dongkelun/vue-echarts-map.git
+git push -u origin master
+
+npm run build
+git checkout -b gh-pages
+git add -f dist
+git commit -m 'first commit'
+git subtree push --prefix dist origin gh-pages
