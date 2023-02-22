@@ -48,9 +48,9 @@ vue3 + vite + typescript + pinia
 
 **## 截图**
 
-![dark](./public/dark.jpg)
+![dark](https://i.328888.xyz/2023/02/22/xWVyX.jpeg)
 
-![light](./public/light.jpg)
+![light](https://i.328888.xyz/2023/02/22/xWyGJ.jpeg)
 
 
 
