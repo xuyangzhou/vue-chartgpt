@@ -36,7 +36,7 @@ vue3 + vite + typescript + pinia
 
 **## vue chartgpt**
 
-关于项目名chartGPT，原计划计划是调用openAI的接口，后来了解到openAI调用有次数限制且现在openAI闭源了，坐等百度阿里的GPT面世，所以变成了GPT => LTM（Listen to me），引用吕子乔的话来说就是不是看你要问什么，得看我回复什么！
+关于项目名chartGPT，原计划调用openAI的接口，后来了解到openAI调用有次数限制且现在openAI闭源了，坐等百度阿里的GPT面世，所以变成了GPT => LTM（Listen to me），引用吕子乔的话来说就是不是看你要问什么，得看我回复什么！
 
 
 **## 成为Contributor**
@@ -73,13 +73,13 @@ If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has a
 
 
 
-\1. Disable the built-in TypeScript Extension
+1. Disable the built-in TypeScript Extension
 
-​    \1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
+​    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
 
-​    \2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
+​    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
 
-\2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
 
 
 
